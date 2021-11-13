@@ -15,7 +15,7 @@ public class Driver {
 		// TODO Auto-generated method stub
 		
   /*   Scanner userInput = new Scanner(System.in);
-     
+       
      System.out.println(" Welcome to Davis and Davis Bank Application!");
      
      System.out.println(" Create an account if you are a new customer, Enter a username below: ");
