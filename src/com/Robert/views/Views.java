@@ -1,7 +1,8 @@
 package com.Robert.views;
 
 import java.util.Scanner;
-//import com.Robert.models.*;
+import com.Robert.models.*;
+
 
 public class Views {
 	
@@ -18,12 +19,26 @@ public class Views {
 				+ "1) Create an Account: \n"
 				+ "2) Login to Existing Account \n");
 		
+		 
+		
 		return Integer.parseInt(scanner.nextLine());
 	}
 	
 public static boolean displayLogin() {
+	
 	System.out.println("Username: ");
-	String username = scanner.nextLine();
+	
+	 String username = scanner.nextLine();
+	
+	//if(username.equals(customer1.getUserName()){
+	//	System.out.println("username exists now enter password");
+		
+		//System.out.println("Password: ");
+		//scanner.nextLine();
+		
+	//}
+        
+	
 	System.out.println("Password: ");
 	scanner.nextLine();
 	System.out.println("Welcome back, " + username + "\n");

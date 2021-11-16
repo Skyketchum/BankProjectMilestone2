@@ -10,7 +10,7 @@ public class SimpleConnection {
 	
 	private static final String CONNECTION_PASSWORD = "password";
 	
-	private static final String CONNECTION_URL = "jdbc:postgresql://localhost:5432/Bank-Setup";
+	private static final String CONNECTION_URL = "jdbc:postgresql://localhost:5432/postgres";
 	
 	
 	public static void main(String [] args) {

@@ -11,10 +11,10 @@ public class Driver {
 		
 		//call first controller
 		
-		Controller.init();
+		
 		// TODO Auto-generated method stub
 		
-  /*   Scanner userInput = new Scanner(System.in);
+    Scanner userInput = new Scanner(System.in);
        
      System.out.println(" Welcome to Davis and Davis Bank Application!");
      
@@ -30,9 +30,11 @@ public class Driver {
      
      System.out.println("Your username is: " +customer1.getUserName()+ "and password is: " +customer1.getUserName());
      
-     userInput.close();
+    // userInput.close();
      
-     */
+     Controller.init();
+     
+     
 	}
 
 }

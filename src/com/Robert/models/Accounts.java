@@ -2,7 +2,7 @@ package com.Robert.models;
 
 public class Accounts {
 	
-	//private int account_id;
+	private int account_id;
 	
 	private double accountBalance;
 	
@@ -35,6 +35,16 @@ public class Accounts {
     	
     	System.out.println("has made a deposit of: $" + depositAmount );
     }
+
+
+public int getAccountId() {
+	return account_id;
+}
+
+
+public void setAccountId(int account_id) {
+	this.account_id = account_id;
+}
 	
 	
 }
