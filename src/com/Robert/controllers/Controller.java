@@ -2,9 +2,10 @@ package com.Robert.controllers;
 
 
 import org.apache.logging.log4j.LogManager;
+
 import org.apache.logging.log4j.Logger;
 
-import com.Robert.views.Views;
+import com.Robert.views.Views; 
 import com.Robert.models.Accounts;
 import java.util.Scanner;
 
@@ -62,4 +63,6 @@ public static void init() {
 	
 	
 }
+
+
 }
