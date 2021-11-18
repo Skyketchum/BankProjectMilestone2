@@ -74,7 +74,7 @@ public class Accounts {
 	
 	if(withdrawalAmount <= currentBalance) {
 	
-		withdrawalAmount -= currentBalance  = accountBalance;
+		withdrawalAmount -= accountBalance  = currentBalance;
 	}
 	
 	System.out.println("has made a withdrawal of: $" + withdrawalAmount );
@@ -83,9 +83,9 @@ public class Accounts {
 
     public void deposit(double amount) {
 	
-	currentBalance += depositAmount = accountBalance;
+    	 depositAmount += accountBalance = currentBalance;
 	
-	System.out.println("has made a deposit of: $" + depositAmount );
+	System.out.println("has made a deposit of: $" + depositAmount  +"here is your new balance: " +currentBalance);
    }
 
 

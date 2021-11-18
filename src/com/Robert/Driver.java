@@ -4,7 +4,7 @@ import com.Robert.controllers.Controller;
 import com.Robert.models.*;
 
 import java.util.*;
-
+import java.util.Scanner;
 public class Driver {
 
 	public static void main( String [] args){
@@ -30,7 +30,7 @@ public class Driver {
      
      System.out.println("Your username is: " +customer1.getUserName()+ "and password is: " +customer1.getUserName());
      
-    // userInput.close();
+     //userInput.close();
      
      Controller.init();
      

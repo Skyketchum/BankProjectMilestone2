@@ -28,20 +28,28 @@ public static boolean displayLogin() {
 	
 	System.out.println("Username: ");
 	
-	 String username = scanner.nextLine();
+	Customer customer1 = new Customer();
+	
+	  customer1.setUserName(scanner.next());
 	
 	//if(username.equals(customer1.getUserName()){
 	//	System.out.println("username exists now enter password");
 		
-		//System.out.println("Password: ");
-		//scanner.nextLine();
 		
 	//}
-        
+      
+	System.out.println("Now enter your password ");
 	
 	System.out.println("Password: ");
 	scanner.nextLine();
-	System.out.println("Welcome back, " + username + "\n");
+	
+	
+	//customer1.setUserPassWord(scanner.next());
+	
+	System.out.println("Welcome back, " +customer1.getUserName() + "\n");
+	
+
+	
 	return true;
 }
 
