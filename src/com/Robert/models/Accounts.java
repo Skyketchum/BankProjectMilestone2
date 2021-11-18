@@ -14,9 +14,19 @@ public class Accounts {
     
     private double depositAmount;
     
+    
+    
+    
+   //currentBalance = accountBalance;
   
  public Accounts() {
 	 
+ }
+ 
+ 
+ public Accounts(int account_id, double currentBalance) {
+	 this.account_id = account_id;
+	 this.currentBalance = currentBalance;
  }
  
  
@@ -67,25 +77,25 @@ public class Accounts {
    public void setDepositAmount(double depositAmount) {
 	   this.depositAmount = depositAmount;
 	   
-   }
+   } 
    
    
-   public void withdrawal(double amount) {
+   public void withdrawal(double withdrawalAmount) {
 	
 	if(withdrawalAmount <= currentBalance) {
 	
-		withdrawalAmount -= accountBalance  = currentBalance;
+		withdrawalAmount -= currentBalance;
 	}
 	
 	System.out.println("has made a withdrawal of: $" + withdrawalAmount );
    }
 
 
-    public void deposit(double amount) {
+    public void deposit(double depositAmount) {
 	
-    	 depositAmount += accountBalance = currentBalance;
+    	 depositAmount += currentBalance;
 	
-	System.out.println("has made a deposit of: $" + depositAmount  +"here is your new balance: " +currentBalance);
+	System.out.println("has made a deposit of: $ " + depositAmount  +" here is your new balance: " +currentBalance);
    }
 
 

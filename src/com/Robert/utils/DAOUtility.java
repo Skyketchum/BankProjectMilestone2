@@ -39,6 +39,8 @@ public class DAOUtility {
 			CONNECTION_PASSWORD = System.getenv(SYSTEM_VARIABLE_PASSWORD);
 			CONNECTION_URL = System.getenv(SYSTEM_VARIABLE_URL);
 			
+			System.out.println(SYSTEM_VARIABLE_URL);
+			
 			input.close();
 			
 		} catch(IOException ex) {

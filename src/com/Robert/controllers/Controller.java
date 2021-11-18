@@ -8,12 +8,16 @@ import org.apache.logging.log4j.Logger;
 import com.Robert.views.Views; 
 import com.Robert.models.Accounts;
 import com.Robert.models.Customer;
+import com.Robert.daos.*;
+
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Controller {
 
 	private static final Logger LOG = LogManager.getLogger(Controller.class);
 	
+	private double amount;
 
 public static void init() {
 	
@@ -26,6 +30,20 @@ public static void init() {
 	boolean isLoggedIn = Views.displayLogin();
 	
 	Accounts account = new Accounts();
+	
+	
+	//create list of accounts
+	ArrayList<Accounts> accounts = new ArrayList<>();
+	
+	
+	AccountsDAOIMPL accDAO = new AccountsDAOIMPL();
+	
+	accounts = accDAO.getAllAccountsofCustomer(1);
+	
+	account = accDAO.getAccount(1);
+	
+	
+	
 	
 	while(isLoggedIn) {
 		
@@ -41,7 +59,8 @@ public static void init() {
 			System.out.println("Enter an amount to deposit: ");
 			System.out.println("----------------");
 			Scanner scanner = new Scanner(System.in);
-			account.deposit(scanner.nextDouble());
+			double amount = scanner.nextDouble();
+			account.setCurrentBalance(account.getCurrentBalance() +amount);
 			
 			break;
 			//make a deposit
@@ -51,7 +70,9 @@ public static void init() {
 			System.out.println("Enter an amount to withdraw: ");
 			System.out.println("----------------");
 			Scanner scanner2 = new Scanner(System.in);
-			account.withdrawal(scanner2.nextDouble());
+			double amount2 = scanner2.nextDouble();
+			account.setCurrentBalance(account.getCurrentBalance() -amount2);
+			
 			
 			
 			break;

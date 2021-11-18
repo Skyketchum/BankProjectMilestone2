@@ -1,0 +1,40 @@
+2021-11-18 13:40:25  TRACE com.Robert.controllers.Controller:53 Inside top menu loop
+2021-11-18 13:43:18  TRACE com.Robert.controllers.Controller:53 Inside top menu loop
+2021-11-18 13:45:57  TRACE com.Robert.controllers.Controller:53 Inside top menu loop
+2021-11-18 13:47:16  TRACE com.Robert.controllers.Controller:53 Inside top menu loop
+2021-11-18 13:50:09  TRACE com.Robert.controllers.Controller:53 Inside top menu loop
+2021-11-18 13:51:12  TRACE com.Robert.controllers.Controller:53 Inside top menu loop
+2021-11-18 13:53:24  TRACE com.Robert.controllers.Controller:53 Inside top menu loop
+2021-11-18 15:38:22  TRACE com.Robert.controllers.Controller:53 Inside top menu loop
+2021-11-18 15:39:42  TRACE com.Robert.controllers.Controller:53 Inside top menu loop
+2021-11-18 15:40:33  TRACE com.Robert.controllers.Controller:53 Inside top menu loop
+2021-11-18 15:40:37  DEBUG com.Robert.controllers.Controller:99 is user still logged in: true
+2021-11-18 15:40:37  TRACE com.Robert.controllers.Controller:100 exit top menu loop
+2021-11-18 15:40:37  TRACE com.Robert.controllers.Controller:53 Inside top menu loop
+2021-11-18 15:40:41  DEBUG com.Robert.controllers.Controller:99 is user still logged in: true
+2021-11-18 15:40:41  TRACE com.Robert.controllers.Controller:100 exit top menu loop
+2021-11-18 15:40:41  TRACE com.Robert.controllers.Controller:53 Inside top menu loop
+2021-11-18 15:40:47  DEBUG com.Robert.controllers.Controller:99 is user still logged in: true
+2021-11-18 15:40:47  TRACE com.Robert.controllers.Controller:100 exit top menu loop
+2021-11-18 15:40:47  TRACE com.Robert.controllers.Controller:53 Inside top menu loop
+2021-11-18 15:51:19  TRACE com.Robert.controllers.Controller:53 Inside top menu loop
+2021-11-18 16:09:31  TRACE com.Robert.controllers.Controller:49 Inside top menu loop
+2021-11-18 16:09:38  DEBUG com.Robert.controllers.Controller:95 is user still logged in: true
+2021-11-18 16:09:38  TRACE com.Robert.controllers.Controller:96 exit top menu loop
+2021-11-18 16:09:38  TRACE com.Robert.controllers.Controller:49 Inside top menu loop
+2021-11-18 16:21:15  TRACE com.Robert.controllers.Controller:50 Inside top menu loop
+2021-11-18 16:21:21  DEBUG com.Robert.controllers.Controller:97 is user still logged in: true
+2021-11-18 16:21:21  TRACE com.Robert.controllers.Controller:98 exit top menu loop
+2021-11-18 16:21:21  TRACE com.Robert.controllers.Controller:50 Inside top menu loop
+2021-11-18 16:24:42  TRACE com.Robert.controllers.Controller:50 Inside top menu loop
+2021-11-18 16:24:49  DEBUG com.Robert.controllers.Controller:97 is user still logged in: true
+2021-11-18 16:24:49  TRACE com.Robert.controllers.Controller:98 exit top menu loop
+2021-11-18 16:24:49  TRACE com.Robert.controllers.Controller:50 Inside top menu loop
+2021-11-18 16:32:03  TRACE com.Robert.controllers.Controller:50 Inside top menu loop
+2021-11-18 16:32:13  DEBUG com.Robert.controllers.Controller:97 is user still logged in: true
+2021-11-18 16:32:13  TRACE com.Robert.controllers.Controller:98 exit top menu loop
+2021-11-18 16:32:13  TRACE com.Robert.controllers.Controller:50 Inside top menu loop
+2021-11-18 16:34:41  TRACE com.Robert.controllers.Controller:50 Inside top menu loop
+2021-11-18 16:34:49  DEBUG com.Robert.controllers.Controller:97 is user still logged in: true
+2021-11-18 16:34:49  TRACE com.Robert.controllers.Controller:98 exit top menu loop
+2021-11-18 16:34:49  TRACE com.Robert.controllers.Controller:50 Inside top menu loop

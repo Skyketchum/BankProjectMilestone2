@@ -32,7 +32,7 @@ public class AccountsDAOIMPL implements AccountsDAO{
 		
 		try {
 			connection = DAOUtility.getConnection();
-			String sql = "SELECT (a.*) FROM account a, account_customer ac where ac.customer_id = ? AND ac.account_id = a.id;";
+			String sql = "SELECT (ac.customer_user_id, a.current_balance) FROM account a, account_customer ac where ac.customer_user_id = ? AND ac.customer_user_id = a.customer_account_user_id;";
 			statement = connection.prepareStatement(sql);
 			statement.setInt(1, id);
 			ResultSet rs = statement.executeQuery();
@@ -40,21 +40,42 @@ public class AccountsDAOIMPL implements AccountsDAO{
 			while (rs.next()) {
 				
 				int account_id = rs.getInt("id");
-			//	String firstName = rs.getString("first_name");
-			//	String lastName = rs.getString("last_name");
+				double currentBalance = rs.getDouble("current_balance");
 				double accountBalance = rs.getDouble("account_balance");
+				double withdrawalAmount = rs.getDouble("withdrawal_amount");
+				double depositAmount = rs.getDouble("deposit_amount");
 			
-				accounts.add(new Accounts());
+				accounts.add(new Accounts(account_id, currentBalance));
 			
 			}} catch(SQLException ex) {
 			ex.printStackTrace();
 		}
 		return accounts;
 	}
+	
 	@Override
 	public Accounts getAccount(int id) {
-		// TODO Auto-generated method stub
-		return null;
+	  Accounts account = new Accounts();
+	
+		
+		try {
+			connection = DAOUtility.getConnection();
+			String sql = "SELECT (ac.customer_user_id, a.current_balance) FROM account a, account_customer ac where ac.customer_user_id = ? AND ac.customer_user_id = a.customer_account_user_id;";
+			statement = connection.prepareStatement(sql);
+			statement.setInt(1, id);
+			ResultSet rs = statement.executeQuery();
+			
+			while (rs.next()) {
+				
+				int account_id = rs.getInt("id");
+				double currentBalance = rs.getDouble("current_balance");
+			
+				account = new Accounts(account_id, currentBalance);
+			
+			}} catch(SQLException ex) {
+			ex.printStackTrace();
+		}
+		return account;
 	}
 
 	@Override
