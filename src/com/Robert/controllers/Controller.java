@@ -61,7 +61,7 @@ public static void init() {
 			Scanner scanner = new Scanner(System.in);
 			double amount = scanner.nextDouble();
 			account.setCurrentBalance(account.getCurrentBalance() +amount);
-			System.out.println("You have made a deposit of: $" +amount +("this is your new balance: $"+account.getCurrentBalance()) );
+			System.out.println("You have made a deposit of: $" +amount +(" this is your new balance: $"+account.getCurrentBalance()) );
 			
 			break;
 			//make a deposit
@@ -75,7 +75,7 @@ public static void init() {
 			if(amount2 <= account.getCurrentBalance()) {
 				account.setCurrentBalance(account.getCurrentBalance() -amount2);
 			}
-			System.out.println("You have made a withdrawal of: $" +amount2 +("this is your new balance: $"+account.getCurrentBalance()) );
+			System.out.println("You have made a withdrawal of: $" +amount2 +(" this is your new balance: $"+account.getCurrentBalance()) );
 			
 			
 			
